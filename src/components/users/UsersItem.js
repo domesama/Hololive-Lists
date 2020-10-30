@@ -9,7 +9,7 @@ export class UsersItem extends Component {
           src={avatar_url}
           alt=""
           className="round-img"
-          style={{ width: "60px" }}
+          style={{ width: "60px", height: "60px" }}
         />
         <h3>{login}</h3>
         <div>

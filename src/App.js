@@ -7,7 +7,9 @@ class App extends Component {
     return (
       <Fragment>
         <Navbar title="Hololive OwO" icon="fas fa-heart" />
-        <Users />
+        <div class="container">
+          <Users />
+        </div>
       </Fragment>
     );
   }

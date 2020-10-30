@@ -17,14 +17,14 @@ export class Users extends Component {
         login: "Amelia Watson",
         avatar_url:
           "https://static.zerochan.net/Watson.Amelia.full.3068543.jpg",
-        channel_url: "https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ",
+        channel_url: "https://www.youtube.com/channel/UCyl1z3jo3XHR1riLFKG5UAg",
       },
       {
         id: "UCoSrY_IQQVpmIRZ9Xf-y93g",
         login: "Gawr Gura",
         avatar_url:
           "https://yt3.ggpht.com/a/AATXAJwyNfLKBDLZoKA3c7u_vPOKbQitz4fcDwi7Iqhi=s900-c-k-c0x00ffffff-no-rj",
-        channel_url: "https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ",
+        channel_url: "https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g",
       },
     ],
   };

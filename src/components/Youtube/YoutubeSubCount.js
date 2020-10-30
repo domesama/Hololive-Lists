@@ -1,4 +1,4 @@
-import React, { Fragment, Component, useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 
 const YoutubeSubCount = (props) => {
   const [subscriberCount, setSubscriberCount] = useState("0");
@@ -14,11 +14,27 @@ const YoutubeSubCount = (props) => {
         setSubscriberCount(count.toString());
       });
   });
-  return (
-    <Fragment>
-      <h4>{subscriberCount.substr(0, 3)}k Subscribers</h4>
-    </Fragment>
-  );
+  if (subscriberCount.length > 4 && subscriberCount.length < 7) {
+    return <h4>{subscriberCount.substr(0, 3)}k Subscribers</h4>;
+  } else if (subscriberCount.length >= 7 && subscriberCount.length < 9) {
+    return (
+      <h4>
+        {subscriberCount.substr(0, 1)}.{subscriberCount.substr(1, 2)} M
+        Subscribers
+      </h4>
+    );
+  } else if (subscriberCount.length == 8) {
+    return (
+      <h4>
+        {subscriberCount.substr(0, 2)}.{subscriberCount.substr(2, 2)} M
+        Subscribers
+      </h4>
+    );
+  } else if (subscriberCount.length >= 9) {
+    return <h4>{subscriberCount.substr(0, 3)} M Subscribers</h4>;
+  }
+
+  return <Fragment> </Fragment>;
 };
 
 export default YoutubeSubCount;
